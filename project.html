@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting 🎨</title>
+    <style>
+        body {
+            background: linear-gradient(138deg, rgb(90, 197, 92) 0%, rgb(61, 139, 55) 100%);
+        }
+        button {
+        display: block;
+        margin: 30px auto;
+        padding: 15px 20px;
+        color: #003100;
+        border: #003100 2px solid;
+        border-radius: 25px 25px;
+        box-shadow: 3px 3px 5px #003100;
+        background: #65c376;
+        transition: all 150ms ease-in-out;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        }
+        button:hover {
+        color: #65c376;
+        background-color: #003100;
+        cursor: crosshair;
+        }
+        h1 {
+        color: #041E02;
+        font-size: 48px;
+        text-decoration-line: underline;
+        font-weight: 900;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 150%;
+      }
+      h2 {
+        color: #041E02;
+        font-weight: bold;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      hr {
+        border-top: 1.5px solid #041E02;
+      }
+      p {
+        color: #041E02;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 25px;
+      }
+      img {
+        max-width: 100%;
+      }
+      .black-girl-paints {
+        border-radius: 12px;
+        transition: transform 150ms ease-in-out, opacity 350ms ease-in-out;
+      }
+      .black-girl-paints:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 700px;
+        margin: 20px auto;
+        background: #9EFDAD;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+      }
+      .grid img {
+        width: 100%;
+      }
+      footer {
+        text-align: center;
+        margin: 0 auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #041E02;
+      }
+      .theme-button {
+        font-size: 18px;
+        background: #041E02;
+        color:#65c376;
+        padding: 15px 20px;
+      }
+      .theme-button:hover {
+        background: #65c376;
+        color:#041E02;
+      }
+      .dark {
+        background: linear-gradient(138deg, rgb(20, 79, 21) 0%, rgb(6, 21, 1) 97%);
+      }
+      .dark .container {
+        background-color: #041E02;
+      }
+      .dark h1 {
+        color:#65c376;
+      }
+      .dark h2 {
+        color:#65c376;
+      }
+      .dark p {
+        color:#65c376;
+      }
+      .dark footer {
+        color:#65c376;
+      }
+    </style>
+</head>
+    <body>
+        <button class="theme-button">Turn the lights off/on</button>
+        <div class="container">
+            <h1>Painting</h1>
+            <h2><em>"I paint myself because I am alone. I paint myself because I am the subject I know best." -Frida Kahlo</em></h2> 
+            <hr />
+            <p>
+                "Painting, the <strong>expression of ideas and emotions</strong>, with the creation of certain aesthetic qualities, in a two-dimensional visual language. The elements of this language—its shapes, lines, colours, tones, and textures—are used in various ways to produce sensations of volume, space, movement, and light on a flat surface. These elements are combined into expressive patterns in order to <em>represent real or supernatural phenomena, to interpret a narrative theme, or to create wholly abstract visual relationships</em>."
+            </p>
+            <hr/>
+            <div class="grid">
+                <a href="https://i.pinimg.com/564x/31/16/01/311601227a5e48e2839246ff4b6098c0.jpg" target="_blank">
+                    <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/905/original/Slide4.PNG?1676067961" width="250" class="black-girl-paints"
+                    />
+                </a>
+                <a href="https://za.pinterest.com/pin/329325791515170364/" target="_blank">
+                    <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/904/original/Slide3.PNG?1676067946" width="250" class="black-girl-paints"
+                    />
+                </a>
+                <a href="https://i.pinimg.com/564x/3c/81/c0/3c81c046f10fbbcb3a8c872d9e391499.jpg" target="_blank">
+                    <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/902/original/Slide1.PNG?1676067917" width="250" class="black-girl-paints"
+                    />
+                </a>
+                <a href="https://i.pinimg.com/564x/4b/3f/a1/4b3fa1a6da654f6394faa3b0df0a7293.jpg" target="_blank">
+                    <img
+                    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/903/original/Slide2.PNG?1676067934" width="250" class="black-girl-paints"
+                    />
+                </a>
+            </div>
+            <hr />
+            <p>
+                I love painting because it allows me to silence my mind. On a constant basis, it gets loud, and I find it hard to focus, hence painting plays a big part in my life. I enjoy the space of silence it provides for me, and breathing whilst moving a paintbrush has become second nature. I wouldn't give up painting for anything, despite its hard origin.
+            </p>
+        </div>
+        <footer>Made by Philisizwe Kuzwayo</footer>
+        <script>
+            function changeTheme () {
+                let body = document.querySelector("body");
+                body.classList.toggle("dark");
+            }
+
+            let themeButton = document.querySelector(".theme-button");
+            themeButton.addEventListener('click', changeTheme)
+        </script>
+    </body>
+</html>
